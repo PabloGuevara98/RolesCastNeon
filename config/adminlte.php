@@ -352,14 +352,14 @@ return [
             'can' => 'admin.jurados.index'
         ],
         ['header' => 'JURADO',
-            'can' => 'admin.calificacion.index'
+            'can' => 'admin.calificaciones.index'
         ],
         [
             'text' => 'Calificaciones',
             'route'  => 'admin.calificaciones.index',
             'icon' => 'fas fa-star',
             'active' => ['admin/calificacion*'],
-            'can' => 'admin.calificacion.index'
+            'can' => 'admin.calificaciones.index'
 
         ],
         [

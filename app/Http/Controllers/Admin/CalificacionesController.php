@@ -10,6 +10,15 @@ class CalificacionesController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function __construct(){
+        $this->middleware('can:admin.calificaciones.index')->only('index');
+        $this->middleware('can:admin.calificaciones.edit')->only('edit','update');
+        $this->middleware('can:admin.calificaciones.create')->only('create',);
+        $this->middleware('can:admin.calificaciones.destroy')->only('destroy',);
+
+
+    }
+
     public function index()
     {
         //
